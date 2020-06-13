@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Silly Startup Generator
+</title>
+<meta name="description" content="Silly Startup Generator">
+
+<style>
+body {
+    background-color: #373737;
+}
+
+h1 {
+    color: #F4F4F4;
+    text-align: center;
+}
+
+p {
+    font-family: "Helvetica";
+    font-size: 78px;
+}
+
+.btn {
+  background-color:#5cbf2a;
+  border-radius:28px;
+  border-color: #ffffff;
+  display:inline-block;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:17px;
+  padding:16px 31px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<script>
+function startupgenerator(resultingPhrase)
+
+{
+
+var groupOfAdjectives = new Array(
+"360 degree","3D printed","A.I.","Alexa integrated","App-controlled","App-enabled","Artisanal","Augmented reality","Autonomous","Bespoke","Bitcoin enabled","Bluetooth connected","Micro","Cellular connected","Computer vision based","Connected","Crowdfunded","Deep learning","DIY","Genetically modified","Enchanted","Farm to table","Gluten free","GMO free","GPS enabled","Blockchain","IoT enabled","VR","Wearable ","Motion tracking","Wifi connected","On demand","Organic","Quantified-self","RFID","Robotic","Self driving","Smart","Solar powered","Subscription","Touchless","Voice activated","Direct to consumer","Gesture controlled","Livestreaming","Data mining","Hands free","Hydroponic"
+)
+
+var groupOfObjects = new Array(
+"toilets","bicycles","tiny homes","fancy soaps","fixed gears","shipping containers","roller coasters","nail polish","soda water","Instapot","STEM toys","diapers","incense","airplane seats","hallucinogens","nootropics","athleisure wear","flannel","cold brew","handcuffs","crystals","underwear","tacos","blenders","hair dryers","social robots","headphones","disco balls","typewriters","marijuana","standing desks","zip lock bags","impossible burgers","party hats","soylent","compost","drones","cats","house keys","coconut oil","craft beer","dating apps","fishing rods","fitness trackers","garden hoses","lamps","makeup","yarn","pens","raw denim","selfie sticks","food trucks","succulents","Airpods","Sourdough","matcha"
+)
+
+var groupOfAudience = new Array(
+"fishermen","people with really big hands","DJs","millennials","Brooklyn gentrifiers","small dogs","singles","elitist baristas","your boyfriend","venture capitalists","goth kids","the clairvoyant ","retirees","yuppies","doomsday preppers","grandparents","your ex-girlfriend","pet parents","Trump supporters","IT network admins","sumo wrestlers","NPR listeners","wedding guests","failed comedians","performance artists","commuters","witches","band geeks","obsessive exercisers","bureaucrats","people looking to make new friends","celebrity impersonators","precocious children","middle management","hermits","flight attendants","discouraged PhD candidates","introverts","brogrammers","assassins","vegans","astronauts","boat captains","makers","meditators","angel investors"
+)
+
+first = Math.floor(Math.random()*groupOfAdjectives.length);
+second = Math.floor(Math.random()*groupOfObjects.length);
+third = Math.floor(Math.random()*groupOfAudience.length);
+
+
+resultingPhrase = groupOfAdjectives[first]+" "+groupOfObjects[second]+" for "+groupOfAudience[third];
+
+
+document.getElementById("wordsHere").innerHTML = resultingPhrase
+
+}
+
+</script>
+<br><br>
+<div>
+
+<h1>
+<p id="wordsHere">You should totally start that company</p>
+
+<br><br>
+
+<input type="button" class="btn" value="Next Idea" onClick="startupgenerator()">
+</div>
+</h1>
+
+</div>
+<br><br>
+
+
+</body>
+</html>
